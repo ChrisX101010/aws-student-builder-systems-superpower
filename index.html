@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Hristos Nenkov — systems, runtime, cloud and software engineering portfolio. Built for the AWS Student Builder Challenge.">
+  <meta property="og:title" content="Hristos Nenkov // Systems Superpower">
+  <meta property="og:description" content="I turn complex systems into deterministic, resilient software.">
+  <meta property="og:type" content="website">
+  <title>Hristos Nenkov // Systems Superpower</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Hristos Nenkov home">
+        <span class="brand-mark" aria-hidden="true">HN</span>
+        <span class="brand-copy">
+          <strong>Hristos Nenkov</strong>
+          <small>Systems Superpower</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#superpowers">Tech Superpowers</a>
+        <a href="#projects">Projects & Achievements</a>
+        <a href="#reactor">Creative Feature</a>
+        <a href="#aws">AWS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse-dot"></span> Systems · Runtime · Cloud Engineering</p>
+        <h1>I turn complex systems into <span>deterministic, resilient software.</span></h1>
+        <p class="hero-lead">
+          I build at the point where software meets systems: compilers, runtimes,
+          infrastructure, deterministic execution and developer tooling.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#reactor">⚡ Activate my superpower</a>
+          <a class="button secondary" href="#projects">Explore my work</a>
+        </div>
+        <p class="microcopy">Built for the AWS Student Builder Challenge · Hosted with AWS Amplify</p>
+      </div>
+
+      <div class="hero-system reveal" aria-label="Animated systems overview">
+        <div class="system-card">
+          <div class="system-topline">
+            <span>systems://hn</span>
+            <span class="status"><i></i> ONLINE</span>
+          </div>
+          <div class="system-grid" aria-hidden="true">
+            <div class="node n1"><b>CODE</b><span>compiler</span></div>
+            <div class="wire w1"></div>
+            <div class="node n2"><b>VERIFY</b><span>invariants</span></div>
+            <div class="wire w2"></div>
+            <div class="node n3"><b>RUN</b><span>runtime</span></div>
+            <div class="wire w3"></div>
+            <div class="node n4"><b>RECOVER</b><span>state</span></div>
+          </div>
+          <div class="terminal-lines" aria-hidden="true">
+            <p><span>$</span> prove --determinism</p>
+            <p class="ok">✓ same inputs → same committed result</p>
+            <p><span>$</span> recover --after-restart</p>
+            <p class="ok">✓ durable state continuity verified</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Portfolio highlights">
+      <div class="shell signals">
+        <article><strong>Open source</strong><span>Upstream compiler contribution</span></article>
+        <article><strong>Systems</strong><span>Deterministic execution & persistence</span></article>
+        <article><strong>Cloud</strong><span>Containers, orchestration & reliability</span></article>
+        <article><strong>Builder</strong><span>From research idea to working artifact</span></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 // About Me</p>
+        <h2>Economics taught me to think in systems. Engineering lets me build them.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy card reveal">
+          <p>
+            I am a University of Belgrade student focused on systems and software engineering.
+            My path crosses business, full-stack development, cloud infrastructure and low-level
+            engineering, which gives me a practical way to reason about both technical systems
+            and the outcomes they are meant to produce.
+          </p>
+          <p>
+            I am especially interested in deterministic runtimes, compiler/toolchain work,
+            distributed systems, reliability and performance. I prefer projects where claims
+            can be tested: a benchmark, a reproducible failure, a stable invariant, a public
+            contribution or a working deployment.
+          </p>
+        </div>
+
+        <aside class="principles card reveal" aria-label="Engineering principles">
+          <p class="card-label">HOW I BUILD</p>
+          <ul>
+            <li><span>01</span><div><strong>Measure before optimizing</strong><small>Evidence beats intuition.</small></div></li>
+            <li><span>02</span><div><strong>Make invariants explicit</strong><small>Correctness should be testable.</small></div></li>
+            <li><span>03</span><div><strong>Prefer simple failure modes</strong><small>Reliable systems are understandable systems.</small></div></li>
+            <li><span>04</span><div><strong>Ship public evidence</strong><small>Code, tests, benchmarks and contributions.</small></div></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section shell" id="superpowers">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 // Skills & Tech Superpowers</p>
+        <h2>Four capabilities I keep combining.</h2>
+      </div>
+
+      <div class="power-grid">
+        <article class="power-card reveal">
+          <div class="power-icon">01</div>
+          <h3>Systems Engineering</h3>
+          <p>Runtimes, deterministic execution, concurrency, memory-aware design and low-level debugging.</p>
+          <div class="tags"><span>Rust</span><span>C/C++</span><span>Linux</span><span>Goose</span></div>
+        </article>
+        <article class="power-card reveal">
+          <div class="power-icon">02</div>
+          <h3>Cloud & Reliability</h3>
+          <p>Containerized workloads, deployment automation, observability thinking and reliable infrastructure.</p>
+          <div class="tags"><span>AWS</span><span>Kubernetes</span><span>Docker</span><span>Linux</span></div>
+        </article>
+        <article class="power-card reveal">
+          <div class="power-icon">03</div>
+          <h3>Software Engineering</h3>
+          <p>Backend and full-stack systems with a bias toward clear interfaces, automation and maintainable delivery.</p>
+          <div class="tags"><span>Python</span><span>TypeScript</span><span>Next.js</span><span>Laravel</span></div>
+        </article>
+        <article class="power-card reveal">
+          <div class="power-icon">04</div>
+          <h3>Research → Evidence</h3>
+          <p>Turning an idea into a measurable experiment, reproducible test or public engineering artifact.</p>
+          <div class="tags"><span>Benchmarks</span><span>CI</span><span>Open Source</span><span>Git</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 // Projects & Achievements</p>
+        <h2>Work with evidence behind it.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project featured reveal">
+          <div class="project-top">
+            <span class="project-type">UPSTREAM COMPILER CONTRIBUTION</span>
+            <a href="https://github.com/aardappel/goose/pull/250" target="_blank" rel="noreferrer">PR #250 ↗</a>
+          </div>
+          <h3>Goose formatter: pathological nesting</h3>
+          <p>
+            Investigated an output-size problem in deeply nested formatting, built a regression
+            test and submitted an upstream fix that caps display indentation while preserving token order.
+          </p>
+          <div class="benchmark" aria-label="10,000 nesting depth benchmark">
+            <div>
+              <span>Baseline @ depth 10,000</span>
+              <div class="bar-track"><i class="bar baseline" style="--w:100%"></i></div>
+              <strong>400.12 MB</strong>
+            </div>
+            <div>
+              <span>Patched</span>
+              <div class="bar-track"><i class="bar patched" style="--w:1.29%"></i></div>
+              <strong>5.14 MB</strong>
+            </div>
+          </div>
+          <div class="project-proof">
+            <span>77.78× smaller output</span>
+            <span>Full Goose test suite passed locally</span>
+            <span>Status: open upstream PR</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-type">DETERMINISTIC SYSTEMS</span>
+            <a href="https://github.com/ChrisX101010/flock" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>Flock</h3>
+          <p>
+            A deterministic blockchain-systems project built in explicit phases: transaction semantics,
+            authenticated state, block commitments, durable chain storage and recovery.
+          </p>
+          <ul class="project-list">
+            <li>Canonical transaction/state encoding</li>
+            <li>Authenticated roots and deterministic commitments</li>
+            <li>Persistent chain verification after restart</li>
+          </ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-type">AGENT INFRASTRUCTURE</span>
+            <a href="https://github.com/ChrisX101010/agent-lifecycle-plane" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>Agent Lifecycle Plane</h3>
+          <p>
+            A control-plane project for agents: principals, capabilities, budgets and lifecycle operations,
+            designed around explicit authorization instead of unconstrained execution.
+          </p>
+          <ul class="project-list">
+            <li>Capability-based permissions</li>
+            <li>Agent budgets and principals</li>
+            <li>API-first lifecycle management</li>
+          </ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-type">OPEN SOURCE / RUST</span>
+            <a href="https://github.com/ChrisX101010/RustTraining" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>RustTraining contributions</h3>
+          <p>
+            Public work around Rust learning materials and benchmarking, including iterative changes based
+            on maintainer review rather than treating the first patch as final.
+          </p>
+          <ul class="project-list">
+            <li>Rust and performance-focused learning work</li>
+            <li>Maintainer feedback incorporated into revisions</li>
+            <li>Public Git history as evidence</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reactor-section" id="reactor">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 // Creative Feature</p>
+          <h2>Systems Superpower Simulator</h2>
+          <p class="section-intro">
+            Most portfolios list skills. This one lets you inject a systems problem and see
+            the engineering response. Choose a failure mode.
+          </p>
+        </div>
+
+        <div class="reactor reveal">
+          <div class="reactor-controls" role="group" aria-label="Choose a systems scenario">
+            <button class="scenario active" data-scenario="recover" type="button">
+              <span>01</span><strong>BREAK → RECOVER</strong><small>Durable state</small>
+            </button>
+            <button class="scenario" data-scenario="optimize" type="button">
+              <span>02</span><strong>SLOW → OPTIMIZE</strong><small>Compiler output</small>
+            </button>
+            <button class="scenario" data-scenario="scale" type="button">
+              <span>03</span><strong>SCALE → ORCHESTRATE</strong><small>Cloud systems</small>
+            </button>
+            <button class="scenario" data-scenario="determinism" type="button">
+              <span>04</span><strong>CHAOS → DETERMINISM</strong><small>Canonical ordering</small>
+            </button>
+          </div>
+
+          <div class="reactor-display">
+            <div class="reactor-header">
+              <div>
+                <p class="card-label">LIVE SIMULATION</p>
+                <h3 id="sim-title">Restart recovery</h3>
+              </div>
+              <span id="sim-status" class="sim-status">READY</span>
+            </div>
+
+            <div class="pipeline" id="pipeline" aria-live="polite">
+              <div class="pipe-node" data-stage="0"><i></i><span>OBSERVE</span></div>
+              <div class="pipe-line"></div>
+              <div class="pipe-node" data-stage="1"><i></i><span>VERIFY</span></div>
+              <div class="pipe-line"></div>
+              <div class="pipe-node" data-stage="2"><i></i><span>ACT</span></div>
+              <div class="pipe-line"></div>
+              <div class="pipe-node" data-stage="3"><i></i><span>PROVE</span></div>
+            </div>
+
+            <div class="sim-panel">
+              <div class="sim-console" id="sim-console" aria-live="polite">
+                <p><span>system</span> Choose a scenario and run the simulation.</p>
+              </div>
+              <div class="sim-metric">
+                <span id="metric-label">Recovery invariant</span>
+                <strong id="metric-value">GREEN</strong>
+                <small id="metric-detail">Persisted chain survives process restart.</small>
+              </div>
+            </div>
+
+            <div class="determinism-demo" id="determinism-demo" hidden>
+              <div class="candidate-row">
+                <span>Arrival order</span>
+                <div id="arrival-order" class="chips"></div>
+              </div>
+              <div class="candidate-row">
+                <span>Canonical order</span>
+                <div id="canonical-order" class="chips"></div>
+              </div>
+              <div class="hash-row">
+                <span>Demo commitment</span>
+                <code id="demo-hash">—</code>
+              </div>
+            </div>
+
+            <button class="button primary run-button" id="run-simulation" type="button">RUN SCENARIO</button>
+            <p class="sim-note" id="sim-note">
+              This simulator explains engineering ideas from my real projects; it is not a production control plane.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="aws">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 // AWS Implementation</p>
+        <h2>Simple deployment. Clear evidence.</h2>
+      </div>
+      <div class="aws-grid">
+        <article class="card aws-card reveal">
+          <div class="aws-mark" aria-hidden="true">AWS</div>
+          <div>
+            <h3>AWS Amplify Hosting</h3>
+            <p>
+              This portfolio is a static, responsive application deployed with AWS Amplify Hosting.
+              The architecture deliberately avoids unnecessary backend services: the goal is a fast,
+              reliable public site with a small operational surface.
+            </p>
+          </div>
+        </article>
+        <article class="card architecture reveal">
+          <p class="card-label">DEPLOYMENT PATH</p>
+          <div class="arch-flow">
+            <span>GitHub</span><i>→</i><span>AWS Amplify</span><i>→</i><span>HTTPS Edge Hosting</span><i>→</i><span>You</span>
+          </div>
+          <p>
+            The repository contains the complete source, deployment notes and challenge write-up
+            so the implementation can be inspected independently.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell final-cta">
+      <div class="cta-card reveal">
+        <p class="eyebrow">BUILD. VERIFY. IMPROVE.</p>
+        <h2>Want to inspect the systems behind the story?</h2>
+        <p>The strongest evidence is public: source, tests, benchmarks and upstream work.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/ChrisX101010" target="_blank" rel="noreferrer">Open GitHub ↗</a>
+          <a class="button secondary" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>
+        <strong>Hristos Nenkov</strong>
+        <span>Systems · Runtime · Cloud Engineering</span>
+      </div>
+      <p>Built as an original submission for the AWS Student Builder Challenge · 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
