@@ -99,7 +99,11 @@ const demo = $("#determinism-demo");
 function setScenario(name) {
   active = name;
   const data = scenarios[name];
-  $$(".scenario").forEach((button) => button.classList.toggle("active", button.dataset.scenario === name));
+  $$(".scenario").forEach((button) => {
+    const selected = button.dataset.scenario === name;
+    button.classList.toggle("active", selected);
+    button.setAttribute("aria-pressed", String(selected));
+  });
   titleEl.textContent = data.title;
   metricLabel.textContent = data.label;
   metricValue.textContent = data.value;

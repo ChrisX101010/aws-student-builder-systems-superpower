@@ -63,9 +63,10 @@ The Goose optimization uses real local benchmark data. The canonical-ordering in
 
 ## Public links
 
-- **Live portfolio:** `[PASTE AMPLIFY URL]`
+- **Live portfolio:** `https://production.duoremdpp82zo.amplifyapp.com/`
 - **GitHub repository:** `https://github.com/ChrisX101010/aws-student-builder-systems-superpower`
 - **Goose upstream PR #250:** https://github.com/aardappel/goose/pull/250
+- **Microsoft RustTraining PR #30 (merged):** https://github.com/microsoft/RustTraining/pull/30
 - **Flock:** https://github.com/ChrisX101010/flock
 - **GitHub:** https://github.com/ChrisX101010
 

@@ -329,3 +329,5 @@ footer { border-top: 1px solid var(--line); padding: 30px 0 42px; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+.run-button:disabled { opacity: .58; cursor: progress; transform: none; }

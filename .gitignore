@@ -1,2 +1,4 @@
 systems-superpower-amplify.zip
+deploy_amplify_cli.sh
+publish_github.sh
 .DS_Store

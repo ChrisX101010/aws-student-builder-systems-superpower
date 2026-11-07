@@ -2,90 +2,70 @@
 
 Original portfolio built for the **AWS Student Builder Challenge: Build Your Tech Superpower (2026)**.
 
+**Live site:** https://production.duoremdpp82zo.amplifyapp.com/
+
 > **Superpower:** turning complex systems into deterministic, resilient software.
 
-## Live architecture
+## Creative feature
+
+The **Systems Superpower Simulator** lets a visitor explore four systems scenarios:
+
+1. **BREAK → RECOVER** — durable state and restart recovery.
+2. **SLOW → OPTIMIZE** — a real Goose formatter benchmark from upstream PR #250.
+3. **SCALE → ORCHESTRATE** — container/orchestration operating principles.
+4. **CHAOS → DETERMINISM** — canonical ordering plus a browser SHA-256 demo commitment.
+
+## Public engineering evidence
+
+- Goose upstream PR #250 (open): https://github.com/aardappel/goose/pull/250
+- Microsoft RustTraining PR #30 (merged): https://github.com/microsoft/RustTraining/pull/30
+- Flock: https://github.com/ChrisX101010/flock
+- Agent Lifecycle Plane: https://github.com/ChrisX101010/agent-lifecycle-plane
+- GitHub profile: https://github.com/ChrisX101010
+
+## Architecture
 
 ```text
-public source
-    |
-    v
-GitHub repository
+GitHub source
     |
     v
 AWS Amplify Hosting
     |
     v
-HTTPS portfolio
-    |
-    +-- About Me
-    +-- Tech Superpowers
-    +-- Projects & Achievements
-    +-- Systems Superpower Simulator
+Public HTTPS portfolio
 ```
 
-The site is intentionally static: HTML, CSS and JavaScript with no framework or runtime backend. That keeps the deployment surface small and makes the creative feature usable even on modest devices.
-
-## Creative feature: Systems Superpower Simulator
-
-Rather than only listing skills, the portfolio lets a visitor inject four classes of systems problem:
-
-1. **BREAK → RECOVER** — explains durable state and restart recovery.
-2. **SLOW → OPTIMIZE** — visualizes a real Goose formatter benchmark from upstream PR #250.
-3. **SCALE → ORCHESTRATE** — explains container/orchestration operating principles without inventing performance numbers.
-4. **CHAOS → DETERMINISM** — shuffles candidate arrival order, canonicalizes it and computes a browser SHA-256 demo commitment to show why canonical ordering removes arrival-order nondeterminism.
-
-The simulator is an explanatory interface. Where it uses real benchmark data, the UI says so; conceptual demos are explicitly labeled.
-
-## Public engineering evidence
-
-- Goose upstream PR #250: https://github.com/aardappel/goose/pull/250
-- Flock: https://github.com/ChrisX101010/flock
-- Agent Lifecycle Plane: https://github.com/ChrisX101010/agent-lifecycle-plane
-- RustTraining work: https://github.com/ChrisX101010/RustTraining
-- GitHub profile: https://github.com/ChrisX101010
+The portfolio is intentionally static HTML, CSS and JavaScript. It does not need authentication,
+a database or server-side state.
 
 ## Local preview
-
-No build step is required.
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open `http://127.0.0.1:8080`.
-
-## Deployment
-
-See [DEPLOY.md](DEPLOY.md).
-
-For the fastest challenge-safe path, deploy the included `systems-superpower-amplify.zip` using **AWS Amplify Hosting → Create new app → Deploy without Git → Drag and drop**. The ZIP contains `index.html` at its root.
-
-A GitHub publishing helper is also included:
+## Build the AWS Amplify artifact
 
 ```bash
-bash publish_github.sh
+bash build_deploy_zip.sh
 ```
 
-## Accessibility / usability
+Deploy `systems-superpower-amplify.zip` with **AWS Amplify Hosting → Deploy without Git**.
 
-- semantic headings and navigation
+## Accessibility
+
+- semantic navigation and headings
 - keyboard-operable controls
-- skip link
-- live regions for simulator output
-- mobile layout
+- explicit pressed state for simulator scenarios
+- live simulator status
+- responsive mobile layout
 - `prefers-reduced-motion` support
-- no creative interaction blocks access to normal portfolio content
+- creative interaction never blocks standard portfolio navigation
 
-## Truthfulness note
+## Truthfulness
 
-This portfolio deliberately distinguishes:
-- merged/public project facts,
-- an **open** upstream Goose PR,
-- locally measured benchmark results,
-- conceptual simulator elements.
-
-It does not claim that PR #250 has merged.
+The portfolio distinguishes merged upstream work, an open upstream PR,
+locally measured benchmark evidence and conceptual demonstrations.
 
 ## License
 
